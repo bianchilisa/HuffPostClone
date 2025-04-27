@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HuffPost Clone</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Font Awesome per le icone (CDN gratuito)-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+<!-- Top Bar -->
+<div class="top-bar">
+    <div class="container top-bar-container">
+        <div class="date-time">Domenica 27 Aprile 2025</div>
+        <div class="edition-selector">
+            <span class="current-edition">ITALIA</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </div>
+</div>
+<!-- Header -->
+<header class="main-header">
+    <div class="container header-container">
+        <div class="menu-toggle" id="mobile-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="logo">
+            <h1>HUFFPOST</h1>
+        </div>
+        <nav class="main-nav">
+            <ul class="nav-menu">
+                <li><a href="#">POLITICA</a></li>
+                <li><a href="#">ECONOMIA</a></li>
+                <li><a href="#">ESTERI</a></li>
+                <li><a href="#">LIFE</a></li>
+                <li><a href="#">CULTURE</a></li>
+                <li><a href="#">CITTADINI</a></li>
+                <li><a href="#">VIDEO</a></li>
+                <li><a href="#">BLOG</a></li>
+            </ul>
+        </nav>
+        <div class="header-actions">
+            <button class="search-btn"><i class="fas fa-search"></i></button>
+            <button class="login-btn">Accedi</button>
+        </div>
+    </div>
+</header>
+<!-- Banner di abbonamento -->
+<div class="subscription-banner">
+    <div class="container">
+        <p>Leggi senza limiti con l'abbonamento digitale</p>
+        <button class="subscribe-btn">ABBONATI ORA</button>
+    </div>
+</div>
+
+<!-- Hero Section con notizia principale -->
+<section class="hero-section">
+    <div class="container">
+        <div class="main-story">
+            <div class="main-story-image">
+                <img src="https://placehold.co/800x450" alt="Immagine principale">
+                <div class="image-overlay"></div>
+            </div>
+            <div class="main-story-content">
+                <span class="category">IN EVIDENZA</span>
+                <h2 class="title">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
+                <p class="excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+                <div class="metadata">
+                    <span class="author">Di Nome Autore</span>
+                    <span class="timestamp">27/04/2025 08:30</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="breaking-news">
+    <div class="container">
+        <div class="breaking-header">
+            <span class="breaking-label">ULTIME NOTIZIE</span>
+            <div class="breaking-controls">
+                <button class="control-btn prev"><i class="fas fa-chevron-left"></i></button>
+                <button class="control-btn next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+        <div class="breaking-content">
+            <div class="breaking-item">
+                <span class="breaking-time">08:15</span>
+                <p class="breaking-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Grid di articoli -->
+<section class="news-grid">
+    <div class="container">
+        <div class="grid-container">
+            <!-- Articolo 1 -->
+            <article class="news-card featured">
+                <div class="card-image">
+                    <img src="https://placehold.co/600x400" alt="Articolo 1">
+                </div>
+                <div class="card-content">
+                    <span class="category">POLITICA</span>
+                    <h3 class="title">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
+                    <p class="excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+                    <div class="metadata">
+                        <span class="author">Di Nome Autore</span>
+                        <span class="timestamp">27/04/2025</span>
+                    </div>
+                </div>
+            </article>
+            <!-- Articolo 2 -->
+            <article class="news-card">
+                <div class="card-image">
+                    <img src="https://placehold.co/400x300" alt="Articolo 2">
+                </div>
+                <div class="card-content">
+                    <span class="category">ECONOMIA</span>
+                    <h3 class="title">Consectetur adipiscing elit</h3>
+                    <p class="excerpt">Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+                    <div class="metadata">
+                        <span class="author">Di Nome Autore</span>
+                        <span class="timestamp">27/04/2025</span>
+                    </div>
+                </div>
+            </article>
+            <!-- Articolo 3 -->
+            <article class="news-card">
+                <div class="card-image">
+                    <img src="https://placehold.co/400x300" alt="Articolo 3">
+                </div>
+                <div class="card-content">
+                    <span class="category">ESTERI</span>
+                    <h3 class="title">Sed do eiusmod tempor incididunt</h3>
+                    <p class="excerpt">Ut labore et dolore magna aliqua.</p>
+                    <div class="metadata">
+                        <span class="author">Di Nome Autore</span>
+                        <span class="timestamp">27/04/2025</span>
+                    </div>
+                </div>
+            </article>
+            <!-- Articolo 4 -->
+            <article class="news-card">
+                <div class="card-image">
+                    <img src="https://placehold.co/400x300" alt="Articolo 4">
+                </div>
+                <div class="card-content">
+                    <span class="category">LIFE</span>
+                    <h3 class="title">Ut enim ad minim veniam</h3>
+                    <p class="excerpt">Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <div class="metadata">
+                        <span class="author">Di Nome Autore</span>
+                        <span class="timestamp">26/04/2025</span>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- Section Divider -->
+<div class="section-divider">
+    <div class="container">
+        <div class="divider-line"></div>
+    </div>
+</div>
+
+<!-- Video Section -->
+<section class="video-section">
+    <div class="container">
+        <h2 class="section-title">VIDEO</h2>
+        <div class="video-grid">
+            <div class="main-video">
+                <div class="video-thumbnail">
+                    <img src="https://placehold.co/600x400" alt="Video principale">
+                    <div class="play-icon">
+                        <i class="fas fa-play-circle"></i>
+                    </div>
+                </div>
+                <h3 class="video-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
+            </div>
+            <div class="video-list">
+                <div class="video-item">
+                    <div class="video-thumb">
+                        <img src="https://placehold.co/300x200" alt="Video">
+                        <div class="play-icon small">
+                            <i class="fas fa-play-circle"></i>
+                        </div>
+                    </div>
+                    <h4 class="video-title">Consectetur adipiscing elit</h4>
+                </div>
+                <div class="video-item">
+                    <div class="video-thumb">
+                        <img src="https://placehold.co/300x200" alt="Video">
+                        <div class="play-icon small">
+                            <i class="fas fa-play-circle"></i>
+                        </div>
+                    </div>
+                    <h4 class="video-title">Nullam quis risus eget urna mollis</h4>
+                </div>
+                <div class="video-item">
+                    <div class="video-thumb">
+                        <img src="https://placehold.co/300x200" alt="Video">
+                        <div class="play-icon small">
+                            <i class="fas fa-play-circle"></i>
+                        </div>
+                    </div>
+                    <h4 class="video-title">Sed do eiusmod tempor incididunt</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Section Divider -->
+<div class="section-divider">
+    <div class="container">
+        <div class="divider-line"></div>
+    </div>
+</div>
+
+<!-- Sezione Blog -->
+<section class="blog-section">
+    <div class="container">
+        <h2 class="section-title">BLOG</h2>
+        <div class="blog-grid">
+            <!-- Blog 1 -->
+            <article class="blog-card">
+                <div class="blog-author">
+                    <div class="author-avatar">
+                        <img src="https://placehold.co/100x100" alt="Avatar">
+                    </div>
+                    <div class="author-info">
+                        <h3 class="author-name">Nome Autore</h3>
+                        <p class="author-title">Giornalista</p>
+                    </div>
+                </div>
+                <h4 class="blog-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+                <p class="blog-excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+            </article>
+
+            <!-- Blog 2 -->
+            <article class="blog-card">
+                <div class="blog-author">
+                    <div class="author-avatar">
+                        <img src="https://placehold.co/100x100" alt="Avatar">
+                    </div>
+                    <div class="author-info">
+                        <h3 class="author-name">Nome Autore</h3>
+                        <p class="author-title">Opinionista</p>
+                    </div>
+                </div>
+                <h4 class="blog-title">Consectetur adipiscing elit</h4>
+                <p class="blog-excerpt">Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+            </article>
+
+            <!-- Blog 3 -->
+            <article class="blog-card">
+                <div class="blog-author">
+                    <div class="author-avatar">
+                        <img src="https://placehold.co/100x100" alt="Avatar">
+                    </div>
+                    <div class="author-info">
+                        <h3 class="author-name">Nome Autore</h3>
+                        <p class="author-title">Esperto</p>
+                    </div>
+                </div>
+                <h4 class="blog-title">Sed do eiusmod tempor incididunt</h4>
+                <p class="blog-excerpt">Ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="main-footer">
+    <div class="container">
+        <div class="footer-top">
+            <div class="footer-logo">
+                <h2>HUFFPOST</h2>
+            </div>
+            <div class="footer-social">
+                <p>SEGUICI</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-content">
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h3>SEZIONI</h3>
+                    <ul>
+                        <li><a href="#">Politica</a></li>
+                        <li><a href="#">Economia</a></li>
+                        <li><a href="#">Esteri</a></li>
+                        <li><a href="#">Life</a></li>
+                        <li><a href="#">Culture</a></li>
+                        <li><a href="#">Cittadini</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>SERVIZI</h3>
+                    <ul>
+                        <li><a href="#">Newsletter</a></li>
+                        <li><a href="#">RSS</a></li>
+                        <li><a href="#">App Mobile</a></li>
+                        <li><a href="#">Podcast</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>HUFFPOST</h3>
+                    <ul>
+                        <li><a href="#">Chi siamo</a></li>
+                        <li><a href="#">Contatti</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="#">Termini e condizioni</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-disclaimer">
+                <p>© 2025 HuffPost Italia S.r.l. - Tutti i diritti riservati</p>
+                <p>Parte di GEDI Gruppo Editoriale S.p.A.</p>
+                <p>P.IVA 12345678910</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // Script per il toggle del menu mobile
+    document.getElementById('mobile-menu').addEventListener('click', function() {
+        document.querySelector('.main-nav').classList.toggle('active');
+    });
+</script>
+</body>
+</html>
